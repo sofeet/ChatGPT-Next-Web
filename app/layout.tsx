@@ -7,10 +7,10 @@ import { getBuildConfig } from "./config/build";
 const buildConfig = getBuildConfig();
 
 export const metadata = {
-  title: "è¶é›¨AIäººæ™ºèƒ½ChatGPT",
-  description: "æ‰“é€ ä½ çš„ç¥å¥‡è„‘æ´ä¸€èµ·åˆ›é€ ã€‚",
+  title: "µûÓêAIÈËÖÇÄÜChatGPT",
+  description: "´òÔìÄãµÄÉñÆæÄÔ¶´Ò»Æğ´´Ôì¡£",
   appleWebApp: {
-    title: "è¶é›¨AIäººæ™ºèƒ½ChatGPT",
+    title: "µûÓêAIÈËÖÇÄÜChatGPT",
     statusBarStyle: "default",
   },
   themeColor: "#fafafa",
