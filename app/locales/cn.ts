@@ -1,10 +1,10 @@
 import { SubmitKey } from "../store/config";
 
 const cn = {
-  WIP: "该功能仍在开发中……",
+  WIP: "沈先生：13921492881，微信号：sofeet100 ",
   Error: {
     Unauthorized:
-      "现在是未授权状态，请点击左下角设置按钮输入访问密码，如有疑问请联系微信:sofeet",
+      "请前往[设置](/#/settings)页输入正确的访问密码，本产品只在为大客户 企业or单位 使用上真正高速的chatGPT，如您的企业需要部署该独立产品请与我们联系，沈先生：13921492881（微信号：sofeet100），个人建议复制网址使用单客户版本：https://openai.cd57.cn/ 感谢您的理解与支持。",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 条对话`,
@@ -188,7 +188,7 @@ const cn = {
     Add: "新增预设对话",
   },
   Plugin: {
-    Name: "插件",
+    Name: "联系我们",
   },
   Mask: {
     Name: "面具",

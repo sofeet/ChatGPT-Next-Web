@@ -2,9 +2,9 @@ import { SubmitKey } from "../store/config";
 import type { LocaleType } from "./index";
 
 const tw: LocaleType = {
-  WIP: "該功能仍在開發中……",
+  WIP: "沈先生：13921492881，wechat：sofeet100",
   Error: {
-    Unauthorized: "現在是未授權狀態，請點擊左下角設置按鈕輸入訪問密碼，如有疑問請聯系微信:sofeet",
+    Unauthorized: "請前往[設置](/#/settings)頁輸入正確的訪問密碼，本產品只在為大客戶 企業or單位 使用上真正高速的chatGPT，如果您的企業需要部署請與我們聯系，沈先生：13921492881（微信號：sofeet100），個人建議復製網址使用單客戶版本：https://openai.cd57.cn/ 感謝您的理解與支持。",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 條對話`,
@@ -185,7 +185,7 @@ const tw: LocaleType = {
     Edit: "前置上下文和歷史記憶",
     Add: "新增一條",
   },
-  Plugin: { Name: "插件" },
+  Plugin: { Name: "联系我们" },
   Mask: {
     Name: "面具",
     Page: {
