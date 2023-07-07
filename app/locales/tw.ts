@@ -1,10 +1,10 @@
 import { SubmitKey } from "../store/config";
-import type { LocaleType } from "./index";
+import type { PartialLocaleType } from "./index";
 
-const tw: LocaleType = {
-  WIP: "沈先生：13921492881，wechat：sofeet100",
+const tw: PartialLocaleType = {
+  WIP: "沈先生：13921492881 ，微信號：sofeet100",
   Error: {
-    Unauthorized: "請前往[設置](/#/settings)頁輸入正確的訪問密碼，本產品只在為大客戶 企業or單位 使用上真正高速的chatGPT，如果您的企業需要部署請與我們聯系，沈先生：13921492881（微信號：sofeet100），個人建議復製網址使用單客戶版本：https://openai.cd57.cn/ 感謝您的理解與支持。",
+    Unauthorized: "目前您的狀態是未授權，請前往設定頁面輸入授權碼。使用上真正高速的chatGPT，如您的企業需要部署該獨立產品請與我們聯系，沈先生：13921492881（微信號：sofeet100）",
   },
   ChatItem: {
     ChatItemCount: (count: number) => `${count} 條對話`,
@@ -59,26 +59,10 @@ const tw: LocaleType = {
   Settings: {
     Title: "設定",
     SubTitle: "設定選項",
-    Actions: {
-      ClearAll: "清除所有資料",
-      ResetAll: "重設所有設定",
-      Close: "關閉",
-      ConfirmResetAll: "您確定要重設所有設定嗎？",
-      ConfirmClearAll: "您確定要清除所有数据嗎？",
-    },
+
     Lang: {
-      Name: "Language",
+      Name: "Language", // ATTENTION: if you wanna add a new translation, please do not translate this value, leave it as `Language`
       All: "所有语言",
-      Options: {
-        cn: "简体中文",
-        en: "English",
-        tw: "繁體中文",
-        es: "Español",
-        it: "Italiano",
-        tr: "Türkçe",
-        jp: "日本語",
-        de: "Deutsch",
-      },
     },
     Avatar: "大頭貼",
     FontSize: {
@@ -101,8 +85,10 @@ const tw: LocaleType = {
       SubTitle: "在预览气泡中预览 Markdown 内容",
     },
     Mask: {
-      Title: "面具启动页",
-      SubTitle: "新建聊天时，展示面具启动页",
+      Splash: {
+        Title: "面具启动页",
+        SubTitle: "新建聊天时，展示面具启动页",
+      },
     },
     Prompt: {
       Disable: {
@@ -158,9 +144,13 @@ const tw: LocaleType = {
       Title: "單次回應限制 (max_tokens)",
       SubTitle: "單次互動所用的最大 Token 數",
     },
-    PresencePenlty: {
+    PresencePenalty: {
       Title: "話題新穎度 (presence_penalty)",
       SubTitle: "值越大，越有可能擴展到新話題",
+    },
+    FrequencyPenalty: {
+      Title: "頻率懲罰度 (frequency_penalty)",
+      SubTitle: "值越大，越有可能降低重複字詞",
     },
   },
   Store: {
@@ -185,7 +175,7 @@ const tw: LocaleType = {
     Edit: "前置上下文和歷史記憶",
     Add: "新增一條",
   },
-  Plugin: { Name: "联系我们" },
+  Plugin: { Name: "插件" },
   Mask: {
     Name: "面具",
     Page: {
@@ -228,6 +218,12 @@ const tw: LocaleType = {
     Close: "关闭",
     Create: "新建",
     Edit: "编辑",
+  },
+  Exporter: {
+    Model: "模型",
+    Messages: "消息",
+    Topic: "主題",
+    Time: "時間",
   },
 };
 
